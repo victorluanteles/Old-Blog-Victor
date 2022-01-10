@@ -135,3 +135,11 @@ STATICFILES_DIRS = [(os.path.join(BASE_DIR, 'static'))]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 django_on_heroku.settings(locals())
+
+AWS_ACCESS_KEY_ID = 'AKIASMMYLEHLOQ52KP4Q'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'victor-blog-imagens'
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
