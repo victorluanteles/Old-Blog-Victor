@@ -14,29 +14,29 @@
                     <div class="my-5">
                         <form action="" method="post">
                              {% csrf_token %}
-                         <div class="form-floating">
-                                <input class="form-control" name="name" id="name" type="text" placeholder="Insira o seu nome" required />
-                                <label for="name">Nome</label>
-                                <div class="invalid-feedback" >A name is required.</div>
-                            </div>
-                            <div class="form-floating">
-                                <input class="form-control" name="email" id="email" type="email" placeholder="Insira o seu email" required />
-                                <label for="email">Endereço de E-Mail</label>
-                                <div class="invalid-feedback">An email is required.</div>
-                                <div class="invalid-feedback">Email is not valid.</div>
-                            </div>
-                            <div class="form-floating">
-                                <input class="form-control" name="phone" id="phone" type="tel" maxlength="11" placeholder="Digite o seu telefone" required />
-                                <label for="phone">Número de Telefone</label>
-                                <div class="invalid-feedback" >A phone number is required.</div>
-                            </div>
-                            <div class="form-floating">
-                                <textarea class="form-control" name="message" id="message" placeholder="Deixe sua mensagem" style="height: 12rem" required></textarea>
-                                <label for="message">Mensagem</label>
-                                <div class="invalid-feedback">A message is required.</div>
-                            </div>
-                            </br>
-                            <button class="btn btn-primary text-uppercase"  id="submitButton" type="submit">Enviar</button>
+                             <div class="form-floating">
+                                    <input class="form-control" name="name" id="name" type="text" placeholder="Insira o seu nome" required />
+                                    <label for="name">Nome</label>
+                                    <div class="invalid-feedback" >A name is required.</div>
+                             </div>
+                                <div class="form-floating">
+                                    <input class="form-control" name="email" id="email" type="email" placeholder="Insira o seu email" required />
+                                    <label for="email">Endereço de E-Mail</label>
+                                    <div class="invalid-feedback">An email is required.</div>
+                                    <div class="invalid-feedback">Email is not valid.</div>
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" name="phone" id="phone" type="tel" maxlength="11" minlength="11"  placeholder="Digite o seu telefone" required />
+                                    <label for="phone">Número de Telefone</label>
+                                    <div class="invalid-feedback" >A phone number is required.</div>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" name="message" id="message" placeholder="Deixe sua mensagem" style="height: 12rem" required></textarea>
+                                    <label for="message">Mensagem</label>
+                                    <div class="invalid-feedback">A message is required.</div>
+                                </div>
+                                </br>
+                                <button class="btn btn-primary text-uppercase"  id="submitButton" type="submit">Enviar</button>
                         </form>
                     </div>
                 </div>
