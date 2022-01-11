@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponse, HttpResponseRedirect
 from contas.models import Post, Contact, Category
 from contas.forms import ContactForm
 from django.core.paginator import Paginator
+from django.contrib import messages
 # Create your views here.
 
 def inicioBlog(request):
@@ -36,6 +37,9 @@ def contactBlog(request):
             data.message = form.cleaned_data['message']
             data.phone = form.cleaned_data['phone']
             data.save()
+            messages.success(request, 'Mensagem enviada!')
+            return HttpResponseRedirect('/contact/')
+
     form = ContactForm
     context = {
         'form': form
