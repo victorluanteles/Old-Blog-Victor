@@ -13,7 +13,12 @@ class PostAdmin(admin.ModelAdmin):
     list_filter = ['category']
     prepopulated_fields = {'slug': ('title',)}
 
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ['name', 'email','message']
+    def has_add_permission(self, request, obj=None):
+        return False
+
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Post, PostAdmin)
-admin.site.register(Contact)
+admin.site.register(Contact, ContactAdmin)
