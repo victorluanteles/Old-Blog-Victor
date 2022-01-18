@@ -8,14 +8,16 @@
 {% block content %}
 <main>
     <aside>
-        <h2>  Categorias</h2>
+        <h4>  Categorias</h4>
         {% for item_c in all_category %}
         <a href="{% url 'filter' item_c.id %}">
-            <p>{{item_c.title}}</p>
+            {{item_c.title}}
         </a>
          <hr class="my-1" />
         {% endfor %}
     </aside>
+
+
 
     <section>
         {% for item in page_obj %}
