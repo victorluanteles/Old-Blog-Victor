@@ -7,7 +7,7 @@
     {% block content %}
 <main>
     <aside>
-                <h2>  Categorias</h2>
+                <h4>  Categorias</h4>
                 {% for item_c in all_category %}
                 <a href="{% url 'filter' item_c.id %}">
                     {{item_c.title}}
