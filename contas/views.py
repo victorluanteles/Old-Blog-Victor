@@ -61,13 +61,6 @@ def filterView(request,id):
     return render(request, "contas/filter.html", context)
 
 
-def baseView(request):
-    all_category = Category.objects.order_by('id')
-    context = {
-        'all_category': all_category
-    }
-    return render(request, "contas/base.html", context)
-
 
 def testeView(request,id):
     all_category = Category.objects.order_by('id')
