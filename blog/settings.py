@@ -25,7 +25,7 @@ ROOT_PATH = os.path.dirname(__file__)
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-6)(9fg=1ugl=1y5q=r47m9g=o%nen#lb+8ni-sfl151^meg9fb'
+SECRET_KEY = '*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool, default=False)
@@ -136,10 +136,10 @@ STATICFILES_DIRS = [(os.path.join(BASE_DIR, 'static'))]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 django_on_heroku.settings(locals())
 
-AWS_ACCESS_KEY_ID = 'AKIASMMYLEHLOQ52KP4Q'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'victor-blog-imagens'
+AWS_ACCESS_KEY_ID = '*'
+AWS_SECRET_ACCESS_KEY = '*'
+AWS_STORAGE_BUCKET_NAME = '*'
 AWS_QUERYSTRING_AUTH = False
 AWS_S3_FILE_OVERWRITE = True
 AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+DEFAULT_FILE_STORAGE = '*'
